@@ -13,6 +13,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install automake
 fi
 
+git clone https://github.com/firebase/scrypt.git
+
 cd scrypt/
 autoreconf -i
 ./configure
