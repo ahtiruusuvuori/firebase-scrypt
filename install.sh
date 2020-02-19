@@ -1,4 +1,4 @@
-if [ "$OSTYPE" == "linux-gnu" ] || [ "$OSTYPE" == "linux-musl"]; then
+if [ "$OSTYPE" == "linux-gnu" ] || [ "$OSTYPE" == "linux-musl" ]; then
         apk add --no-chache libssl-dev
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         brew install openssl
