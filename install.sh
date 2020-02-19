@@ -1,4 +1,4 @@
-if [[ "$OSTYPE" == "linux-gnu" ]] || [[ "$OSTYPE" == "linux-musl"]]; then
+if [ "$OSTYPE" == "linux-gnu" ] || [ "$OSTYPE" == "linux-musl"]; then
         apk add --no-chache libssl-dev
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         brew install openssl
@@ -7,7 +7,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
         export CPPFLAGS="-I/usr/local/opt/openssl/include"
 fi
 
-if [[ "$OSTYPE" == "linux-gnu" ]] || [[ "$OSTYPE" == "linux-musl" ]]; then
+if [ "$OSTYPE" == "linux-gnu" ] || [ "$OSTYPE" == "linux-musl" ]; then
 	apk add --no-chache automake
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install automake
