@@ -3,15 +3,15 @@
 export declare class FirebaseScrypt {
   constructor(...args: any[])
 
-  hash(password: string, salt: string): Promise<void>
+  hash(password: string, salt: string): Promise<string>
 
-  verify(password: string, salt: string, hash: string): Promise<void>
+  verify(password: string, salt: string, hash: string): Promise<boolean>
 }
 
 export declare namespace FirebaseScrypt {
   namespace prototype {
-    function hash(password: string, salt: string): Promise<void>
+    function hash(password: string, salt: string): Promise<string>
 
-    function verify(password: string, salt: string, hash: string): Promise<void>
+    function verify(password: string, salt: string, hash: string): Promise<boolean>
   }
 }
