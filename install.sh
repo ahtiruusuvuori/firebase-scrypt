@@ -1,5 +1,5 @@
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-        sudo apt install libssl-dev
+        apk add --no-chache libssl-dev
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         brew install openssl
         export PATH="/usr/local/opt/openssl/bin:$PATH"
@@ -8,7 +8,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-	sudo apt install automake
+	apk add --no-chache automake
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	brew install automake
 fi
